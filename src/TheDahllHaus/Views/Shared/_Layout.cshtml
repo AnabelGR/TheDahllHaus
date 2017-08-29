@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/components/slideshow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/components/slidenav.css" />
+
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/grid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/slideshow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/grid.js"></script>
+
+    <!--local and non UIkit CDNs-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet" />
+    <script src="~/js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+
+<body style="background-color: cadetblue;">
+    <div class="uk-container" style="background-color: #000000;">
+        <div class="uk-nav-header">
+            <nav class="uk-navbar-center">
+                <div class="uk-navbar-content uk-navbar-center">
+                    <img src="~/images/artcult-white.png" width="100" />
+                </div>
+                <div class="uk-navbar-content uk-navbar-right">
+                    <a href="#offcanvas-slide" uk-toggle style="text-decoration:none; color:white;">MENU</a>
+                    <ul> @Html.ActionLink("Home", "Index", "Home", null, new { @style = "color:white;" })</ul>
+                </div>
+
+                <a href="" class="uk-navbar-toggle"></a>
+            </nav>
+        </div>
+
+        <div id="offcanvas-slide" uk-offcanvas>
+            <div class="uk-offcanvas-bar linkstyle">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>Meet the artist</li>
+                    <li>Reviews</li>
+                    <li>Contact | Request a Quote</li>
+
+                    <li class="uk-nav-header">Creations</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>Headpieces</li>
+                    <li>Costumes</li>
+                    <li>Masks</li>
+                    <li>Wigs</li>
+                    <li>Publications</li>
+
+                    <li class="uk-nav-header">MUA Services</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>Makeup Services</li>
+                    <li>Hairstylist Services</li>
+                    <li>Production Assistant for Hire</li>
+
+
+                    <li class="uk-nav-header">Repairs and Alterations</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>Costumes</li>
+                    <li>Wigs</li>
+
+                    <li class="uk-nav-header">Welcome to The Dahll Haus</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>Get The Dahll Haus Newsletter</li>
+                    <li class="fa-ul">
+                    <li><a href="https://www.facebook.com/pg/TheDahllHaus/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/thedahllhaus"> <i class="fa fa-instagram fa-2x"></i> </a></li>
+                    <li><a href="https://www.etsy.com/shop/TheDahllHaus"> <i class="fa fa-etsy fa-2x"></i> </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        @RenderBody()
+    </div>
+</body>
+</html>
