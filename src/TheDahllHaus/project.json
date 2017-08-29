@@ -28,7 +28,7 @@
     },
     "jQuery.UI.Combined": "1.12.1",
     "jQuery": "3.1.1",
-    "uikit-addons": "2.21.0",
+    "mui": "1.0.0",
     "Microsoft.AspNetCore.Razor.Tools": {
       "version": "1.0.0-preview2-final",
       "type": "build"

@@ -2,24 +2,13 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <!-- jQuery is required -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.muicss.com/mui-0.9.24/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.24/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/components/slideshow.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/components/slidenav.css" />
-
-
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/grid.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/slideshow.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/grid.js"></script>
-
-    <!--local and non UIkit CDNs-->
+    <!--local and non MUI CDNs-->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="~/css/main.css" rel="stylesheet" />
     <script src="~/js/scripts.js"></script>
@@ -27,65 +16,60 @@
     <title>@ViewBag.Title</title>
 </head>
 
-<body style="background-color: cadetblue;">
-    <div class="uk-container" style="background-color: #000000;">
-        <div class="uk-nav-header">
-            <nav class="uk-navbar-center">
-                <div class="uk-navbar-content uk-navbar-center">
-                    <img src="~/images/artcult-white.png" width="100" />
-                </div>
-                <div class="uk-navbar-content uk-navbar-right">
-                    <a href="#offcanvas-slide" uk-toggle style="text-decoration:none; color:white;">MENU</a>
-                    <ul> @Html.ActionLink("Home", "Index", "Home", null, new { @style = "color:white;" })</ul>
-                </div>
-
-                <a href="" class="uk-navbar-toggle"></a>
-            </nav>
+<body>
+    <div id="sidedrawer" class="mui--no-user-select">
+        <div id="sidedrawer-brand" class="mui--appbar-line-height">
+            <span class="mui--text-title">Brand.io</span>
         </div>
-
-        <div id="offcanvas-slide" uk-offcanvas>
-            <div class="uk-offcanvas-bar linkstyle">
-                <ul class="uk-nav uk-nav-default">
-                    <li class="uk-nav-header">About</li>
-                    <li class="uk-nav-divider"></li>
-                    <li>Meet the artist</li>
-                    <li>Reviews</li>
-                    <li>Contact | Request a Quote</li>
-
-                    <li class="uk-nav-header">Creations</li>
-                    <li class="uk-nav-divider"></li>
-                    <li>Headpieces</li>
-                    <li>Costumes</li>
-                    <li>Masks</li>
-                    <li>Wigs</li>
-                    <li>Publications</li>
-
-                    <li class="uk-nav-header">MUA Services</li>
-                    <li class="uk-nav-divider"></li>
-                    <li>Makeup Services</li>
-                    <li>Hairstylist Services</li>
-                    <li>Production Assistant for Hire</li>
-
-
-                    <li class="uk-nav-header">Repairs and Alterations</li>
-                    <li class="uk-nav-divider"></li>
-                    <li>Costumes</li>
-                    <li>Wigs</li>
-
-                    <li class="uk-nav-header">Welcome to The Dahll Haus</li>
-                    <li class="uk-nav-divider"></li>
-                    <li>Get The Dahll Haus Newsletter</li>
-                    <li class="fa-ul">
-                    <li><a href="https://www.facebook.com/pg/TheDahllHaus/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="https://www.instagram.com/thedahllhaus"> <i class="fa fa-instagram fa-2x"></i> </a></li>
-                    <li><a href="https://www.etsy.com/shop/TheDahllHaus"> <i class="fa fa-etsy fa-2x"></i> </a></li>
-
+        <div class="mui-divider"></div>
+        <ul>
+            <li>
+                <strong>About</strong>
+                <ul>
+                    <li><a href="#">Meet the Artist</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Reviews</a></li>
                 </ul>
+            </li>
+            <li>
+                <strong>Custom Creations</strong>
+                <ul>
+                    <li><a href="#">Headdresses, Fascinators and Hats</a></li>
+                    <li><a href="#">Masks</a></li>
+                    <li><a href="#">Costumes</a></li>
+                    <li><a href="#">Wigs</a></li>
+                    <li><a href="#">Zines</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>MUA</strong>
+                <ul>
+                    <li><a href="#">Hair</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Production Assistant</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <header id="header">
+        <div class="mui-appbar mui--appbar-line-height">
+            <div class="mui-container-fluid">
+                <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+                <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+                <span class="mui--text-title mui--visible-xs-inline-block">
+                    <img src="~/images/kateslogos/thedahllhouse_logo_white.png" width="250"/>
+                </span>
             </div>
         </div>
-    </div>
-    <div class="uk-container">
+    </header>
+    <div id="content-wrapper">
         @RenderBody()
     </div>
+    <footer id="footer">
+        <div class="mui-container-fluid">
+            <br>
+            Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+        </div>
+    </footer>
 </body>
 </html>
