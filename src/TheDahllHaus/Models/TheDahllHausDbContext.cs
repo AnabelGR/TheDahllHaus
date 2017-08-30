@@ -31,6 +31,5 @@ namespace TheDahllHaus.Models
         {
             base.OnModelCreating(builder);
         }
-
     }
 }

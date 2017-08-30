@@ -17,38 +17,40 @@
 </head>
 
 <body>
-    <div id="sidedrawer" class="mui--no-user-select">
-        <div id="sidedrawer-brand" class="mui--appbar-line-height">
-            <span class="mui--text-title">Brand.io</span>
+    <div id="sidedrawer">
+        <div id="sidedrawer-brand">
+            <img src="~/images/kateslogos/thedahllhouse_logo_white.png" width="185" />
         </div>
         <div class="mui-divider"></div>
         <ul>
             <li>
-                <strong>About</strong>
+                <strong>ABOUT THE DAHLL HAUS</strong>
                 <ul>
-                    <li><a href="#">Meet the Artist</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Reviews</a></li>
+                    <li class="list-group-item">@Html.ActionLink("Meet the Artist", "About", "Home")</li>
+                    <li class="list-group-item">@Html.ActionLink("Ask for a quote", "Contact", "Home")</li>
+                    <li class="list-group-item">@Html.ActionLink("Dahll Haus Love Notes", "Reviews", "Home")</li>
                 </ul>
             </li>
             <li>
-                <strong>Custom Creations</strong>
+                <strong>DAHLL HAUS SHOP</strong>
                 <ul>
-                    <li><a href="#">Headdresses, Fascinators and Hats</a></li>
-                    <li><a href="#">Masks</a></li>
-                    <li><a href="#">Costumes</a></li>
-                    <li><a href="#">Wigs</a></li>
-                    <li><a href="#">Zines</a></li>
+                    <li class="list-group-item">@Html.ActionLink("Headdresses", "Headdresses", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Masks", "Masks", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Zines", "Zines", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Hats and Fascinators", "Hats and Fascinators", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Costumes", "Costumes", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Wigs", "Wigs", "Items")</li>
+                    <li class="list-group-item">@Html.ActionLink("Repairs and Alterations", "Repairs", "Repairs")</li>
                 </ul>
             </li>
             <li>
-                <strong>MUA</strong>
+                <strong>MUA AND ASSISTANT WORK PORTFOLIO</strong>
                 <ul>
-                    <li><a href="#">Hair</a></li>
-                    <li><a href="#">Makeup</a></li>
-                    <li><a href="#">Production Assistant</a></li>
+                    <li class="list-group-item">@Html.ActionLink("Hair", "Hairstylist", "MUA")</li>
+                    <li class="list-group-item">@Html.ActionLink("MUA", "Makeup", "MUA")</li>
+                    <li class="list-group-item">@Html.ActionLink("Assistant Work", "Assistant", "MUA")</li>
                 </ul>
-            </li>
+          </li>
         </ul>
     </div>
     <header id="header">
@@ -56,19 +58,19 @@
             <div class="mui-container-fluid">
                 <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
                 <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
-                <span class="mui--text-title mui--visible-xs-inline-block">
-                    <img src="~/images/kateslogos/thedahllhouse_logo_white.png" width="250"/>
-                </span>
+                <span class="mui--text-title">Welcome to the Dahll Haus.</span>
             </div>
         </div>
     </header>
     <div id="content-wrapper">
-        @RenderBody()
+        <div class="mui-container-fluid">
+            @RenderBody()
+        </div>
     </div>
     <footer id="footer">
         <div class="mui-container-fluid">
             <br>
-            Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+            <p>The Dahll Haus <i class="fa fa-copyright fa-fw" aria-hidden="true"></i>2017   | Made with ♥ by <a href="https://www.muicss.com">MUI</a> |   @Html.ActionLink("HOME", "Index", "Home")</p>
         </div>
     </footer>
 </body>
