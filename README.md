@@ -9,7 +9,7 @@
 A website for The Dahll Haus, a headdress, costume, and wig maker as well as MUA services and repair.
 
 |MVP goals|
-|---||
+|---|
 |Splash page video|
 |Database of items listed for sale|
 |Categories for all items|
