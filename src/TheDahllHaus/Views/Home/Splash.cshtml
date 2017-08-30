@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.muicss.com/mui-0.9.24/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.24/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!--local and non MUI CDNs-->
+    <link href="~/css/main.css" rel="stylesheet" />
+    <script src="~/js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+
+<body style="background-color:black;">
+
+    <div class="mui--text-center mui-cover mui--text-center">
+        <video autoplay>
+            <source src="~/videos/DahllHaus3.mp4" type="video/mp4" />
+        </video>
+        <button class="mui-btn mui-btn--large mui-btn--primary mui-btn--fab">@Html.ActionLink("Enter", "Index", "Home", null, new { @style = "color:white;" })</button>
+    </div>
+</body>
+</html>
