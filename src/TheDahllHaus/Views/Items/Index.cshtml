@@ -1,0 +1,34 @@
+﻿<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Satisfy|Archivo+Narrow" rel="stylesheet">
+
+@{
+    ViewData["Title"] = "The Dahll Haus Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<TheDahllHaus.Models.Item>
+
+<div class="mui-container-fluid">
+    <h1 class="headingText" align="center">Welcome to the Shop!</h1>
+    <div class="mui-divider"></div>
+    <br />
+    <div class="mui-container-fluid">
+        <table class="mui-table">
+
+
+            @foreach (var listItem in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content(listItem.Image)" width="200" />
+                    </td>
+                    <td>
+                        <h3 style="font-family: 'Satisfy', cursive;"> @Html.DisplayFor(modelItem => listItem.Name)</h3>
+                        <p>@Html.DisplayFor(modelItem => listItem.Description)</p>
+                        <p><strong>@Html.DisplayFor(modelItem => listItem.Price)</strong></p>
+                        <button class="mui-btn--accent">BUY</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

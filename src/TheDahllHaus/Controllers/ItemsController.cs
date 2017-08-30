@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace TheDahllHaus.Controllers
 {
-    public class ItemController : Controller
+    public class ItemsController : Controller
     {
         private TheDahllHausDbContext db = new TheDahllHausDbContext();
 

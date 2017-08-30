@@ -2156,13 +2156,17 @@ buttons {
   color: #CFD8DC; }
 
 a {
-  color: #CFD8DC; }
+  color: #CFD8DC;
+  text-decoration: none; }
   a a:hover {
-    color: #CFD8DC; }
+    color: #CFD8DC;
+    text-decoration: none; }
   a a:visited {
-    color: #607D8B; }
+    color: #607D8B;
+    text-decoration: none; }
   a a:active {
-    color: #CFD8DC; }
+    color: #CFD8DC;
+    text-decoration: none; }
 
 #splash {
   font-family: "Satisfy", cursive; }
@@ -2187,4 +2191,7 @@ a {
   margin: 5px;
   font-family: "Satisfy", cursive;
   height: 175px; }
+
+#itemText {
+  font-family: "Satisfy", cursive; }
 

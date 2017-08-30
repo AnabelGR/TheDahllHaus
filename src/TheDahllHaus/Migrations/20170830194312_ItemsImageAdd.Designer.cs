@@ -8,9 +8,10 @@ using TheDahllHaus.Models;
 namespace TheDahllHaus.Migrations
 {
     [DbContext(typeof(TheDahllHausDbContext))]
-    partial class TheDahllHausDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170830194312_ItemsImageAdd")]
+    partial class ItemsImageAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1")

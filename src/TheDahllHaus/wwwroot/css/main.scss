@@ -189,15 +189,19 @@ buttons {
 
 a {
     color: $lightblgr;
+    text-decoration: none;
     
     a:hover {
     color: $lightblgr;
+    text-decoration: none;
     }
     a:visited {
         color: $midblgr;
+    text-decoration: none;
     }
     a:active {
         color: $lightblgr;
+    text-decoration: none;
     }
 }
 
@@ -229,4 +233,8 @@ a {
     margin: 5px;
     font-family: $Satisfy;
     height: 175px;
+}
+
+#itemText {
+    font-family: $Satisfy;
 }

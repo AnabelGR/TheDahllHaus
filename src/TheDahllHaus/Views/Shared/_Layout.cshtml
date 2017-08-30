@@ -34,7 +34,7 @@
         <div class="mui-divider"></div>
         <ul>
             <li>
-                <strong style="color:white;">THE DAHLL HAUS</strong>
+                <strong style="color:white;">@Html.ActionLink("THE DAHLL HAUS", "Index", "Home")</strong>
                 <ul>
                     <li class="list-group-item">@Html.ActionLink("Meet the Artist", "About", "Home", null, new { @id ="parentLink" })</li>
                     <li class="list-group-item">@Html.ActionLink("Ask for a quote", "Contact", "Home")</li>
@@ -42,16 +42,10 @@
                 </ul>
             </li>
             <li>
-                <strong style="color:white;">DAHLL HAUS SHOP</strong>
-                <ul>
-                    <li class="list-group-item">@Html.ActionLink("Headdresses", "Headdresses", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Masks", "Masks", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Zines", "Zines", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Hats and Fascinators", "Hats and Fascinators", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Costumes", "Costumes", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Wigs", "Wigs", "Items")</li>
-                    <li class="list-group-item">@Html.ActionLink("Repairs and Alterations", "Repairs", "Repairs")</li>
-                </ul>
+                <strong style="color:white;">@Html.ActionLink("THE DAHLL HAUS SHOP", "Index", "Items")</strong>
+            </li>
+            <li>
+                <strong style="color:white;">REPAIRS AND ALTERATION SERVICES</strong>
             </li>
             <li>
                 <strong style="color:white;">MUA PORTFOLIO</strong>
