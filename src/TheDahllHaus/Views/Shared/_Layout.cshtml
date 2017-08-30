@@ -10,6 +10,15 @@
 
     <script src="//cdn.muicss.com/mui-0.9.24/js/mui.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-combined.js"></script>
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-combined.min.js"></script>
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-angular-combined.js"></script>
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-angular-combined.minjs"></script>
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-react-combined.js"></script>
+    <script src="//cdn.muicss.com/mui-0.9.24/extra/mui-react-combined.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+
     <script src="~/js/scripts.js"></script>
     <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
 
@@ -25,7 +34,7 @@
         <div class="mui-divider"></div>
         <ul>
             <li>
-                <strong>ABOUT THE DAHLL HAUS</strong>
+                <strong style="color:white;">THE DAHLL HAUS</strong>
                 <ul>
                     <li class="list-group-item">@Html.ActionLink("Meet the Artist", "About", "Home", null, new { @id ="parentLink" })</li>
                     <li class="list-group-item">@Html.ActionLink("Ask for a quote", "Contact", "Home")</li>
@@ -33,7 +42,7 @@
                 </ul>
             </li>
             <li>
-                <strong>DAHLL HAUS SHOP</strong>
+                <strong style="color:white;">DAHLL HAUS SHOP</strong>
                 <ul>
                     <li class="list-group-item">@Html.ActionLink("Headdresses", "Headdresses", "Items")</li>
                     <li class="list-group-item">@Html.ActionLink("Masks", "Masks", "Items")</li>
@@ -45,7 +54,7 @@
                 </ul>
             </li>
             <li>
-                <strong>MUA PORTFOLIO</strong>
+                <strong style="color:white;">MUA PORTFOLIO</strong>
           </li>
         </ul>
     </div>
@@ -65,6 +74,7 @@
         </div>
     </header>
     <div id="content-wrapper">
+        <div class="mui--appbar-height"></div>
         <div class="mui-container-fluid">
             @RenderBody()
         </div>
@@ -72,7 +82,7 @@
     <footer id="footer">
         <div class="mui-container-fluid">
             <br>
-            <p>The Dahll Haus <i class="fa fa-copyright fa-fw" aria-hidden="true"></i>2017   | Made with ♥ by <a href="https://www.muicss.com">MUI</a> |   @Html.ActionLink("HOME", "Index", "Home")</p>
+            <p class="footText">Design by Amatorah Design | The Dahll Haus <i class="fa fa-copyright fa-fw" aria-hidden="true"></i>2017</p>
         </div>
     </footer>
 </body>

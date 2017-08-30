@@ -188,7 +188,7 @@ buttons {
 }
 
 a {
-    color: $off-white;
+    color: $lightblgr;
     
     a:hover {
     color: $lightblgr;
@@ -213,4 +213,20 @@ a {
 .navbar {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.headingText {
+    font-family: $Satisfy;
+}
+
+.footText {
+    color: $off-white;
+}
+
+.review {
+    background-color: $lightblgr;
+    padding: 10px;
+    margin: 5px;
+    font-family: $Satisfy;
+    height: 175px;
 }

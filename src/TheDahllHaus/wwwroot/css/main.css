@@ -2156,7 +2156,7 @@ buttons {
   color: #CFD8DC; }
 
 a {
-  color: #ECEFF1; }
+  color: #CFD8DC; }
   a a:hover {
     color: #CFD8DC; }
   a a:visited {
@@ -2174,4 +2174,17 @@ a {
 .navbar {
   padding-left: 20px;
   padding-right: 20px; }
+
+.headingText {
+  font-family: "Satisfy", cursive; }
+
+.footText {
+  color: #ECEFF1; }
+
+.review {
+  background-color: #CFD8DC;
+  padding: 10px;
+  margin: 5px;
+  font-family: "Satisfy", cursive;
+  height: 175px; }
 
