@@ -8,6 +8,24 @@
 
 A website for The Dahll Haus, a headdress, costume, and wig maker as well as MUA services and repair.
 
+|MVP goals|
+|---||
+|Splash page video|
+|Database of items listed for sale|
+|Categories for all items|
+|Home page with featured items|
+|Shop with categories|
+|Portfolio for MUA services|
+|Portfolio for production and promotion assistant work|
+|Information for repair and alteration services|
+
+|further functionality to add|
+|---|
+|Authentication for sales and CRUD.|
+|Paypal API for sales|
+|Square API for sales|
+|Add a craft supplies inventory database.|
+
 
 ## Setup/Installation Requirements
 
@@ -49,7 +67,9 @@ If you have any issues or have questions, ideas, concerns, or contributions plea
 
 **IDE:** Visual Studio 2015
 
-**Design Framework:** UIKit
+**Design Framework:** MUI
+
+**Video Editing:** Wondershare Filmora
 
 **Database Management:** MySQL (SSMS)
 
