@@ -1,12 +1,15 @@
 ﻿@import "../../bower_components/mui/src/sass/mui/colors";
 @import "../../bower_components/mui/src/sass/mui";
-@import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i');
 
-$archivo: 'Archivo', sans-serif;
 $darkblgr: mui-color('blue-grey', '900');
 $midblgr: mui-color('blue-grey', '500');
 $lightblgr: mui-color('blue-grey', '100');
 $off-white: mui-color('blue-grey', '50');
+$Satisfy: 'Satisfy', cursive;
+$Amatic: 'Amatic SC', cursive;
+$ArchivoNarrow: 'Archivo Narrow', sans-serif;
+$Archivo: 'Archivo', sans-serif;
+
 
 /**
  * Body CSS
@@ -14,9 +17,9 @@ $off-white: mui-color('blue-grey', '50');
 html,
 body {
   height: 100%;
-  background-color: $darkblgr;
-  font-family: $archivo;
-}
+  background-color: $midblgr;
+  font-family: $Archivo;
+  }
 
 html,
 body,
@@ -50,6 +53,7 @@ buttons {
   z-index: 2;
   background-color: $darkblgr;
   transition: transform 0.2s;
+  font-family: $ArchivoNarrow;
 }
 
 #content-wrapper {
@@ -181,4 +185,32 @@ buttons {
 .mui-appbar {
       background-color: black;
       color: $lightblgr;
+}
+
+a {
+    color: $off-white;
+    
+    a:hover {
+    color: $lightblgr;
+    }
+    a:visited {
+        color: $midblgr;
+    }
+    a:active {
+        color: $lightblgr;
+    }
+}
+
+#splash {
+    font-family: $Satisfy;
+}
+
+#headtitle {
+    font-family: $Satisfy;
+    font-size: 24px;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
 }

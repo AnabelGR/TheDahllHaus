@@ -16,7 +16,6 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2026,7 +2025,7 @@ h4, h5, h6 {
 html,
 body {
   height: 100%;
-  background-color: #263238;
+  background-color: #607D8B;
   font-family: "Archivo", sans-serif; }
 
 html,
@@ -2057,7 +2056,8 @@ buttons {
   overflow: auto;
   z-index: 2;
   background-color: #263238;
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+  font-family: "Archivo Narrow", sans-serif; }
 
 #content-wrapper {
   min-height: 100%;
@@ -2154,4 +2154,24 @@ buttons {
 .mui-appbar {
   background-color: black;
   color: #CFD8DC; }
+
+a {
+  color: #ECEFF1; }
+  a a:hover {
+    color: #CFD8DC; }
+  a a:visited {
+    color: #607D8B; }
+  a a:active {
+    color: #CFD8DC; }
+
+#splash {
+  font-family: "Satisfy", cursive; }
+
+#headtitle {
+  font-family: "Satisfy", cursive;
+  font-size: 24px; }
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px; }
 

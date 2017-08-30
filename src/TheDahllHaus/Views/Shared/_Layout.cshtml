@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//cdn.muicss.com/mui-0.9.24/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Satisfy|Archivo|Archivo+Narrow" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet" />
+
     <script src="//cdn.muicss.com/mui-0.9.24/js/mui.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!--local and non MUI CDNs-->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="~/css/main.css" rel="stylesheet" />
     <script src="~/js/scripts.js"></script>
     <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
+
+
     <title>@ViewBag.Title</title>
 </head>
 
 <body>
     <div id="sidedrawer">
-        <div id="sidedrawer-brand" class="parentLink">
-            <h3>The Dahll Haus</h3>
+        <div id="sidedrawer-brand">
+
         </div>
         <div class="mui-divider"></div>
         <ul>
             <li>
                 <strong>ABOUT THE DAHLL HAUS</strong>
                 <ul>
-                    <li class="list-group-item">@Html.ActionLink("Meet the Artist", "About", "Home")</li>
+                    <li class="list-group-item">@Html.ActionLink("Meet the Artist", "About", "Home", null, new { @id ="parentLink" })</li>
                     <li class="list-group-item">@Html.ActionLink("Ask for a quote", "Contact", "Home")</li>
                     <li class="list-group-item">@Html.ActionLink("Dahll Haus Love Notes", "Reviews", "Home")</li>
                 </ul>
@@ -44,22 +45,23 @@
                 </ul>
             </li>
             <li>
-                <strong>MUA AND ASSISTANT WORK PORTFOLIO</strong>
-                <ul>
-                    <li class="list-group-item">@Html.ActionLink("Hair", "Hairstylist", "MUA")</li>
-                    <li class="list-group-item">@Html.ActionLink("MUA", "Makeup", "MUA")</li>
-                    <li class="list-group-item">@Html.ActionLink("Assistant Work", "Assistant", "MUA")</li>
-                </ul>
+                <strong>MUA PORTFOLIO</strong>
           </li>
         </ul>
     </div>
     <header id="header">
         <div class="mui-appbar mui--appbar-line-height">
-            <div class="mui-container-fluid">
-                <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
-                <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
-                <span class="mui--text-title">Welcome to the Dahll Haus.</span>
-            </div>
+            <table width="100%" class="navbar">
+                <tr style="vertical-align:middle;">
+                    <td class="mui--appbar-height"><a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+                    <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+                    </td>
+                    <td class="mui--appbar-height" align="center">
+                        <span class="mui--text-title" id="headtitle" aligh="center">Welcome to the Dahll Haus</span>
+                    </td>
+                    <td class="mui--appbar-height" align="right"><i class="fa fa-facebook-official fa-fw" aria-hidden="true">  </i><i class="fa fa-etsy fa-fw" aria-hidden="true">  </i><i class="fa fa-instagram fa-fw" aria-hidden="true">  </i></td>
+                </tr>
+            </table>
         </div>
     </header>
     <div id="content-wrapper">
