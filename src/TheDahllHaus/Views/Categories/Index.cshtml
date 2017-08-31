@@ -7,6 +7,7 @@
 
 @model IEnumerable<TheDahllHaus.Models.Category>
 
+
 <div class="mui-container-fluid">
     <h1 class="headingText" align="center">Welcome to the Shop!</h1>
     <div class="mui-divider"></div>
@@ -20,11 +21,11 @@
         <div class="mui-row">
             @foreach (var listCategory in Model)
             {
-                    <div class="mui-col-md-3 mui--divider-right">
-                        <h2 style="font-family: 'Satisfy', cursive;">@Html.DisplayFor(modelCategory => listCategory.Name)</h2>
-                        <button class="mui-btn mui-btn--dark mui-btn--small">@Html.ActionLink("See Items", "Index", "Items")</button>
-                        <div class="mui-divider"></div>
-                    </div>
+                <div class="mui-col-md-3 mui--divider-right">
+                    <h2 style="font-family: 'Satisfy', cursive;">@Html.DisplayFor(modelCategory => listCategory.Name)</h2>
+                    <button class="mui-btn mui-btn--dark mui-btn--small">@Html.ActionLink("See Items", "Index", "Items")</button>
+                    <div class="mui-divider"></div>
+                </div>
             }
         </div>
     </div>

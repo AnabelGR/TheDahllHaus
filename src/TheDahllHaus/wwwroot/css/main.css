@@ -2169,7 +2169,8 @@ a {
     text-decoration: none; }
 
 #splash {
-  font-family: "Satisfy", cursive; }
+  font-family: "Satisfy", cursive;
+  font-size: 36pt; }
 
 #headtitle {
   font-family: "Satisfy", cursive;

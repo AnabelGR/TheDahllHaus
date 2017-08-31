@@ -12,23 +12,22 @@
     <div class="mui-divider"></div>
     <br />
     <div class="mui-container-fluid">
-        <table class="mui-table">
+       <div class="mui-row">
 
 
             @foreach (var listItem in Model)
             {
-                <tr>
-                    <td>
-                        <img src="@Url.Content(listItem.Image)" width="200" />
-                    </td>
-                    <td>
+                <div class="col-md-3">
+
+                    @*<div><img src="@Url.Content(listItem.Image)" width="200"></div>*@
+
                         <h3 style="font-family: 'Satisfy', cursive;"> @Html.DisplayFor(modelItem => listItem.Name)</h3>
                         <p>@Html.DisplayFor(modelItem => listItem.Description)</p>
                         <p><strong>@Html.DisplayFor(modelItem => listItem.Price)</strong></p>
                         <button align="center" class="mui-btn mui-btn--dark mui-btn--small">BUY</button>
-                    </td>
-                </tr>
+
+                </div>
             }
-        </table>
+        </div>
     </div>
 </div>

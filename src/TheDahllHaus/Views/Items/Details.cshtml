@@ -1,0 +1,18 @@
+﻿<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Satisfy|Archivo+Narrow" rel="stylesheet">
+
+@{
+    ViewData["Title"] = "The Dahll Haus Shop Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model TheDahllHaus.Models.Item
+
+
+    <h2>Details</h2>
+    <hr />
+    <p>@Html.DisplayNameFor(model => model.Price): @Html.DisplayFor(model => model.Price)</p>
+    <p>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</p>
+    <p>@Html.DisplayNameFor(model => model.Sale): @Html.DisplayFor(model => model.Sale)</p>
+    <p>@Html.DisplayNameFor(model => model.Category): @Html.DisplayFor(model => model.Category.Name)</p>
+
