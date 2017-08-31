@@ -16,27 +16,24 @@ namespace TheDahllHaus.Controllers
         {
             return View(db.Items.ToList());
         }
-        public IActionResult Costumes()
+        public IActionResult Categories()
+        {
+            return View(db.Categories.ToList());
+        }
+        
+        public IActionResult Details()
         {
             return View();
         }
-        public IActionResult HatsAndFascinators()
+        public IActionResult Edit()
         {
             return View();
         }
-        public IActionResult Headdresses()
+        public IActionResult Add()
         {
             return View();
         }
-        public IActionResult Masks()
-        {
-            return View();
-        }
-        public IActionResult Wigs()
-        {
-            return View();
-        }
-        public IActionResult Zines()
+        public IActionResult Delete()
         {
             return View();
         }
