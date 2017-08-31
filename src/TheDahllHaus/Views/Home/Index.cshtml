@@ -7,19 +7,21 @@
 
 <div class="mui-container-fluid">
     <div class="mui--appbar-min-height"></div>
-        <div align="center">
-            <div class="mui--text-center mui-cover mui--text-center">
-                <video autoplay loop>
-                    <source src="~/videos/cats.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <h1 class="headingText" align="center">Welcome to the Dahll Haus</h1>
-            <div class="mui-divider"></div>
-            <br />
+        <div class="mui-row">
+            <div class="mui-col-md-6">
+                <h1 class="headingText" align="center">Welcome to the Dahll Haus</h1>
+                <div class="mui-divider"></div>
+                <br />
                 <p><strong>There are many nooks in the Dahll Haus.</strong></p>
                 <p>From hats to masks, costumes to wigs, hair and makeup services to alterations and repair, the Dahll Haus has you covered.</p>
                 <p>The materials used to create these pieces are varied, from natural objects to scrap materials to rhinestones, feathers and metallic paint. The work in this show is meant to be worn, not just be displayed on a wall. Dressing up and creatng many versions of one’s self is imperatve for anyone who wants to know who they really are. Wearing ornate costumes speaks to humankind’s urge to play, have fun, and be notced by one another, as well as sense of reverence for traditon, visual presentaton, and the need to embody a character. Dressing up is a ritual meant to be enjoyed, honored, and displayed to others. One should do this daily, being obsessive compulsive about art is to truly love it and the life you create.</p>
-<br />
-            <button align="center" class="mui-btn mui-btn--large" style="background-color:black;">@Html.ActionLink("Enter the Shop", "Index", "Categories")</button>
+                <br />
+                <button align="center" class="mui-btn mui-btn--large" style="background-color:black;">@Html.ActionLink("Enter the Shop", "Index", "Categories")</button>
+            </div>
+            <div class="mui-col-md-4">
+                <video autoplay loop>
+                    <source src="~/videos/cats.mp4" type="video/mp4" width="400" />
+                </video>
+            </div>
     </div>
 </div>

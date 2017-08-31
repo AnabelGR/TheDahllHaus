@@ -2170,7 +2170,8 @@ a {
 
 #splash {
   font-family: "Satisfy", cursive;
-  font-size: 36pt; }
+  font-size: 36pt;
+  text-decoration: none; }
 
 #headtitle {
   font-family: "Satisfy", cursive;
@@ -2189,7 +2190,5 @@ a {
 .review {
   background-color: #CFD8DC;
   padding: 10px;
-  margin: 5px;
-  font-family: "Satisfy", cursive;
-  height: 175px; }
+  margin: 5px; }
 

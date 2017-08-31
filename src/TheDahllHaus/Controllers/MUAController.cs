@@ -12,17 +12,5 @@ namespace TheDahllHaus.Controllers
         {
             return View();
         }
-        public IActionResult Assistant()
-        {
-            return View();
-        }
-        public IActionResult Hairstylist()
-        {
-            return View();
-        }
-        public IActionResult Makeup()
-        {
-            return View();
-        }
     }
 }

@@ -12,22 +12,25 @@
     <div class="mui-divider"></div>
     <br />
     <div class="mui-container-fluid">
-       <div class="mui-row">
+        <div class="mui-row">
 
 
-            @foreach (var listItem in Model)
+            @foreach (var listItem in Model.OrderBy(item=>item.Category.CategoryId))
             {
-                <div class="col-md-3">
+                <div class="mui-col-md-3">
+                    <h4 class="mui--divider-bottom" style="font-variant:small-caps">@Html.DisplayFor(modelItem => listItem.Category.Name)</h4>
+                    <p><em>image to go here</em></p>
 
-                    @*<div><img src="@Url.Content(listItem.Image)" width="200"></div>*@
+                    @*<div>
+                    <img src="@Url.Content(listItem.Image)" width="200">
+                    </div>*@
 
-                        <h3 style="font-family: 'Satisfy', cursive;"> @Html.DisplayFor(modelItem => listItem.Name)</h3>
-                        <p>@Html.DisplayFor(modelItem => listItem.Description)</p>
-                        <p><strong>@Html.DisplayFor(modelItem => listItem.Price)</strong></p>
-                        <button align="center" class="mui-btn mui-btn--dark mui-btn--small">BUY</button>
-
+                    <h3 style="font-family: 'Satisfy', cursive;"> @Html.DisplayFor(modelItem => listItem.Name)</h3>
+                    <p>@Html.DisplayFor(modelItem => listItem.Description)</p>
+                    <p><strong>@Html.DisplayFor(modelItem => listItem.Price)</strong></p>
+                    <button align="center" class="mui-btn mui-btn--dark mui-btn--small">BUY</button>
                 </div>
             }
         </div>
     </div>
-</div>
+</div>s

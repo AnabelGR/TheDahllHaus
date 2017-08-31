@@ -2,7 +2,6 @@
     var $bodyEl = $('body'),
         $sidedrawerEl = $('#sidedrawer');
 
-
     function showSidedrawer() {
         // show overlay
         var options = {
@@ -22,26 +21,20 @@
         }, 20);
     }
 
-
     function hideSidedrawer() {
         $bodyEl.toggleClass('hide-sidedrawer');
     }
 
-
     $('.js-show-sidedrawer').on('click', showSidedrawer);
     $('.js-hide-sidedrawer').on('click', hideSidedrawer);
-
-
-    var $titleEls = $('strong', $sidedrawerEl);
-
-    $titleEls
-      .next()
-      .hide();
-
-    $titleEls.on('click', function () {
-        $(this).next().slideToggle(200);
-    });
-
 });
 
+//var $titleEls = $('strong', $sidedrawerEl);
 
+//$titleEls
+//  .next()
+//  .hide();
+
+//$titleEls.on('click', function () {
+//    $(this).next().slideToggle(200);
+//});
