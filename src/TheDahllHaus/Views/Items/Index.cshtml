@@ -14,17 +14,15 @@
     <div class="mui-container-fluid">
         <div class="mui-row">
 
-
             @foreach (var listItem in Model.OrderBy(item=>item.Category.CategoryId))
             {
                 <div class="mui-col-md-3">
                     <h4 class="mui--divider-bottom" style="font-variant:small-caps">@Html.DisplayFor(modelItem => listItem.Category.Name)</h4>
-                    <p><em>image to go here</em></p>
 
-                    @*<div>
-                    <img src="@Url.Content(listItem.Image)" width="200">
-                    </div>*@
-
+                    <div>
+                        <img src="~/images/creations/bow.jpg" width="200"/>
+                    @*<img width="200" src="@Url.Content(@listItem.Image)" alt="product image" />*@
+                    </div>
                     <h3 style="font-family: 'Satisfy', cursive;"> @Html.DisplayFor(modelItem => listItem.Name)</h3>
                     <p>@Html.DisplayFor(modelItem => listItem.Description)</p>
                     <p><strong>@Html.DisplayFor(modelItem => listItem.Price)</strong></p>
@@ -33,4 +31,4 @@
             }
         </div>
     </div>
-</div>s
+</div>
