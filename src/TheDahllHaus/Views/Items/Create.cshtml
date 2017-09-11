@@ -1,5 +1,41 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Add Item";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@model TheDahllHaus.Models.Item
+
+<div class="mui-panel">
+    <h2>Add a new Item</h2>
+    <div class="mui-divider"></div>
+    @using (Html.BeginForm())
+    {
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Description)
+            @Html.TextBoxFor(model => model.Description)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Image)
+            @Html.TextBoxFor(model => model.Image)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Price)
+            @Html.TextBoxFor(model => model.Price)
+        </p>
+        <p class="mui-dropdown">
+            @Html.LabelFor(model => model.CategoryId)
+            @Html.DropDownList("CategoryId")
+        </p>
+        <p class="mui-checkbox">
+            @Html.LabelFor(model => model.Sale)
+            @Html.CheckBoxFor(model => model.Sale)
+        </p>
+            <p class="mui--text-center">
+                <input type="submit" value="Add new item" />
+            </p>
+    }
+</div>

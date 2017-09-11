@@ -25,16 +25,16 @@
         $bodyEl.toggleClass('hide-sidedrawer');
     }
 
+    var $titleEls = $('strong', $sidedrawerEl);
+
+    $titleEls
+        .next()
+        .hide();
+
+    $titleEls.on('click', function () {
+        $(this).next().slideToggle(200);
+    });
+
     $('.js-show-sidedrawer').on('click', showSidedrawer);
     $('.js-hide-sidedrawer').on('click', hideSidedrawer);
 });
-
-//var $titleEls = $('strong', $sidedrawerEl);
-
-//$titleEls
-//  .next()
-//  .hide();
-
-//$titleEls.on('click', function () {
-//    $(this).next().slideToggle(200);
-//});
